@@ -1,590 +1,99 @@
+<!-- index.html -->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Pulse Estética</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
-
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Append
-  * Template URL: https://bootstrapmade.com/append-bootstrap-website-template/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>- P U L S E -</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
+<body>
+  <nav class="navbar">
+    <img src="img/logo.png" alt="Logo" class="logo" />
+    <div id="menu-toggle" class="menu-toggle">☰</div>
+    <ul class="menu" id="menu">
+      <li><a href="#">Início</a></li>
+      <li><a href="#produtos">Seriços</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
 
-<body class="index-page">
-
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
-
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">Pulse Estética</h1><span>.</span>
-      </a>
-
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="index.html#hero" class="active">Início</a></li>
-          <li><a href="index.html#about">Pulse</a></li>
-         
-          
-          <li><a href="index.html#contact">Contato</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-
-      <a class="btn-getstarted" href="index.html#about">Whatsapp</a>
-
+  <div class="slideshow">
+    <div class="slides slides-desktop">
+      <img src="img/foto1.jpg" class="slide active" />
+      <img src="img/foto2.jpg" class="slide" />
+      <img src="img/foto3.jpg" class="slide" />
+      <img src="img/foto4.jpg" class="slide" />
     </div>
-  </header>
+    <div class="slides slides-mobile">
+      <img src="img/mobile/mobile1.png" class="slide active" />
+      <img src="img/mobile/mobile2.png" class="slide" />
+      
+      
+    </div>
+    <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+    <button class="next" onclick="changeSlide(1)">&#10095;</button>
+  </div>
 
-  <main class="main">
-
-    <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
-
-      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
-
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-10">
-            <h2 data-aos="fade-up" data-aos-delay="100">Pulse Estética Avançada</h2>
-            <p data-aos="fade-up" data-aos-delay="200">Temos o melhor para você!</p>
-          </div>
-         
-        </div>
+  <section id="produtos">
+    <h2>O que fazemos</h2>
+    <p>Uma equipe especializada</p>
+    <div class="produtos-grid">
+      <div class="produto">
+        <img src="img/produto1.jpg" alt="Produto 1" />
+        <p>Pulse Estética Laser.</p>
+        <p>Pulse Estética Laser.,</p>
+        <p>Pulse Estética Laser. </p>
       </div>
-
-    </section><!-- /Hero Section -->
-
-    <!-- Clients Section -->
-    <!-- /Clients Section -->
-
-    <!-- About Section -->
-    <section id="about" class="about section light-background">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row align-items-xl-center gy-5">
-
-          <div class="col-xl-5 content">
-            <h3>Sobre a Pulse</h3>
-            <h2>Dra. Neife F. Marques</h2>
-            <p>Texto aqui sobre a Dra. Neife. Texto aqui sobre a Dra. Neife.  Texto aqui sobre a Dra. Neife.  Texto aqui sobre a Dra. Neife.</p>
-           
-          </div>
-
-          <div class="col-xl-7">
-            <div class="row gy-4 icon-boxes">
-
-              <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-                <div class="icon-box">
-                  <i class="bi bi-buildings"></i>
-                  <h3>Onde estamos!</h3>
-                  <p>Estamos localizados na cidade de Sinop-MT, no centro da cidade. Agende a sua avaliação agora mesmo</p>
-                </div>
-              </div> <!-- End Icon Box -->
-
-              <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
-                <div class="icon-box">
-                  <i class="bi bi-clipboard-pulse"></i>
-                  <h3>Tecnologia</h3>
-                  <p>Usamos metodos e procedimentos avançados. Aparelhos de última geração para te proporcionar o melhor!</p>
-                </div>
-              </div> <!-- End Icon Box -->
-
-              <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
-                <div class="icon-box">
-                  <i class="bi bi-command"></i>
-                  <h3>Conforto</h3>
-                  <p>Proporcionamos conforto e comodide para nossos clientes.</p>
-                </div>
-              </div> <!-- End Icon Box -->
-
-              <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
-                <div class="icon-box">
-                  <i class="bi bi-graph-up-arrow"></i>
-                  <h3>Resultados</h3>
-                  <p>Nossos resultados são indiscutíveis, sempre proporcionando o melhor para nossos clientes.</p>
-                </div>
-              </div> <!-- End Icon Box -->
-
-            </div>
-          </div>
-
-        </div>
+      <div class="produto">
+        <img src="img/produto2.jpg" alt="Produto 2" />
+        <p>Pulse Estética Laser.</p>
+        <p>Pulse Estética Laser.</p>
       </div>
-
-    </section><!-- /About Section -->
-
-    <!-- Stats Section -->
-    <section id="stats" class="stats section dark-background">
-
-      <img src="assets/img/stats-bg.jpg" alt="" data-aos="fade-in">
-
-      <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="1259" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Clientes</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="3568" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Botox</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="9986" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Café</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="9999" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Felicidade</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-        </div>
-
+      <div class="produto">
+        <img src="img/produto3.jpg" alt="Produto 3" />
+        <p>Pulse Estética Laser.</p>
+        <p>Pulse Estética Laser.</p>
       </div>
-
-    </section><!-- /Stats Section -->
-
-    <!-- Services Section -->
-   <!-- /Services Section -->
-
-    <!-- Features Section -->
-    <!-- /Features Section -->
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Nosso portifólio</h2>
-        
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">Tudo</li>
-            <li data-filter=".filter-app">Serviços</li>
-            <li data-filter=".filter-product">Atendimentos</li>
-            
-          </ul><!-- End Portfolio Filters -->
-
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-1.jpeg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Serviço 1</h4>
-                <p>aqui sobre o serviço 1</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-1.jpeg" title="P" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-2.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Atendimento 1</h4>
-                <p>Aqui sobre o atendimento 1</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-2.png" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-           <!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-4.jpeg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Serviço 2</h4>
-                <p>Aqui sobre o serviço 2</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-4.jpeg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-5.jpeg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Atendimento 2</h4>
-                <p>Aqui sobre atendimento 2</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-5.jpeg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-7.jpeg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Serviço 3</h4>
-                <p>Aqui sobre o serviço 3</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-7.jpeg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-8.jpeg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Atendimento 3</h4>
-                <p>Aqui sobre atendimento 3</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-8.jpeg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <!-- End Portfolio Item -->
-
-          </div><!-- End Portfolio Container -->
-
-        </div>
-
+      <div class="produto">
+        <img src="img/produto4.jpg" alt="Produto 4" />
+        <p>Pulse Estética Laser.</p>
+        <p>Pulse Estética Laser. </p>
       </div>
-
-    </section><!-- /Portfolio Section -->
-
-    <!-- Pricing Section -->
-   <!-- /Pricing Section -->
-
-    <!-- Faq Section -->
-    <!-- /Faq Section -->
-
-    <!-- Team Section -->
-    <!-- /Team Section -->
-
-    <!-- Call To Action Section -->
-    <!-- /Call To Action Section -->
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section light-background">
-
-      <div class="container">
-
-        <div class="row align-items-center">
-
-          <div class="col-lg-5 info" data-aos="fade-up" data-aos-delay="100">
-            <h3>Depoimentos</h3>
-            <p>
-              Depoimentos de clientes. Depoimentos de clientes.  Depoimentos de clientes.  Depoimentos de clientes.  Depoimentos de clientes.  Depoimentos de clientes.  
-            </p>
-          </div>
-
-          <div class="col-lg-7" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="swiper init-swiper">
-              <script type="application/json" class="swiper-config">
-                {
-                  "loop": true,
-                  "speed": 600,
-                  "autoplay": {
-                    "delay": 5000
-                  },
-                  "slidesPerView": "auto",
-                  "pagination": {
-                    "el": ".swiper-pagination",
-                    "type": "bullets",
-                    "clickable": true
-                  }
-                }
-              </script>
-              <div class="swiper-wrapper">
-
-                <div class="swiper-slide">
-                  <div class="testimonial-item">
-                    <div class="d-flex">
-                      <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img flex-shrink-0" alt="">
-                      <div>
-                        <h3>Jorge Henrique</h3>
-                        <h4>Gerente &amp; Financeiro</h4>
-                        <div class="stars">
-                          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                        </div>
-                      </div>
-                    </div>
-                    <p>
-                      <i class="bi bi-quote quote-icon-left"></i>
-                      <span>Ótimo atendimento, gostei muito do serviço realizado, com resultados incríveis.</span>
-                      <i class="bi bi-quote quote-icon-right"></i>
-                    </p>
-                  </div>
-                </div><!-- End testimonial item -->
-
-                <div class="swiper-slide">
-                  <div class="testimonial-item">
-                    <div class="d-flex">
-                      <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img flex-shrink-0" alt="">
-                      <div>
-                        <h3>Maria Eduarda</h3>
-                        <h4>Designer</h4>
-                        <div class="stars">
-                          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                        </div>
-                      </div>
-                    </div>
-                    <p>
-                      <i class="bi bi-quote quote-icon-left"></i>
-                      <span>Ótimo atendimento, gostei muito do serviço realizado, com resultados incríveis.</span>
-                      <i class="bi bi-quote quote-icon-right"></i>
-                    </p>
-                  </div>
-                </div><!-- End testimonial item -->
-
-                <div class="swiper-slide">
-                  <div class="testimonial-item">
-                    <div class="d-flex">
-                      <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img flex-shrink-0" alt="">
-                      <div>
-                        <h3>Rosa Carla</h3>
-                        <h4>Vendedora</h4>
-                        <div class="stars">
-                          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                        </div>
-                      </div>
-                    </div>
-                    <p>
-                      <i class="bi bi-quote quote-icon-left"></i>
-                      <span>Ótimo atendimento, gostei muito do serviço realizado, com resultados incríveis.</span>
-                      <i class="bi bi-quote quote-icon-right"></i>
-                    </p>
-                  </div>
-                </div><!-- End testimonial item -->
-
-                <div class="swiper-slide">
-                  <div class="testimonial-item">
-                    <div class="d-flex">
-                      <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img flex-shrink-0" alt="">
-                      <div>
-                        <h3>Roberto Farias</h3>
-                        <h4>Mecânico</h4>
-                        <div class="stars">
-                          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                        </div>
-                      </div>
-                    </div>
-                    <p>
-                      <i class="bi bi-quote quote-icon-left"></i>
-                      <span>Ótimo atendimento, gostei muito do serviço realizado, com resultados incríveis.</span>
-                      <i class="bi bi-quote quote-icon-right"></i>
-                    </p>
-                  </div>
-                </div><!-- End testimonial item -->
-
-                <div class="swiper-slide">
-                  <div class="testimonial-item">
-                    <div class="d-flex">
-                      <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img flex-shrink-0" alt="">
-                      <div>
-                        <h3>João Luiz</h3>
-                        <h4>Empresário</h4>
-                        <div class="stars">
-                          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                        </div>
-                      </div>
-                    </div>
-                    <p>
-                      <i class="bi bi-quote quote-icon-left"></i>
-                      <span>Ótimo atendimento, gostei muito do serviço realizado, com resultados incríveis.</span>
-                      <i class="bi bi-quote quote-icon-right"></i>
-                    </p>
-                  </div>
-                </div><!-- End testimonial item -->
-
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-
-          </div>
-
-        </div>
-
+      <div class="produto">
+        <img src="img/produto5.jpeg" alt="Produto 5" />
+        <p>Pulse Estética Laser.</p>
+        <p>Pulse Estética Laser.</p>
       </div>
-
-    </section><!-- /Testimonials Section -->
-
-    <!-- Recent Posts Section -->
-    <!-- /Recent Posts Section -->
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contato</h2>
-        <p>Para mais informações entre em contato com nossa equipe.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-6">
-
-            <div class="row gy-4">
-              <div class="col-md-6">
-                <div class="info-item" data-aos="fade" data-aos-delay="200">
-                  <i class="bi bi-geo-alt"></i>
-                  <h3>Endereço</h3>
-                  <p>Rua das nogueiras, 655</p>
-                  <p>Centro - Sinop-MT</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <div class="col-md-6">
-                <div class="info-item" data-aos="fade" data-aos-delay="300">
-                  <i class="bi bi-telephone"></i>
-                  <h3>Telefone</h3>
-                  <p>66-99682-3933</p>
-                 
-                </div>
-              </div><!-- End Info Item -->
-
-              <div class="col-md-6">
-                <div class="info-item" data-aos="fade" data-aos-delay="400">
-                  <i class="bi bi-envelope"></i>
-                  <h3>E-mail</h3>
-                  <p>pulseestetica@pulse.com.br</p>
-                  
-                </div>
-              </div><!-- End Info Item -->
-
-              <div class="col-md-6">
-                <div class="info-item" data-aos="fade" data-aos-delay="500">
-                  <i class="bi bi-clock"></i>
-                  <h3>Horários</h3>
-                  <p>Segunda - Sexta</p>
-                  <p>7:30AM - 06:00PM</p>
-                </div>
-              </div><!-- End Info Item -->
-
-            </div>
-
-          </div>
-
-         <!-- End Contact Form -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Contact Section -->
-
-  </main>
-
-  <footer id="footer" class="footer position-relative light-background">
-
-    <div class="container footer-top">
-      <div class="row gy-4">
-        <div class="col-lg-5 col-md-12 footer-about">
-          <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">Pulse Estética Avançada</span>
-          </a>
-          <p>Pulse Estética Avançada. Pulse Estética Avançada. Pulse Estética Avançada. Pulse Estética Avançada. Pulse Estética Avançada. </p>
-          <div class="social-links d-flex mt-4">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
-          </div>
-        </div>
-
-        <div class="col-lg-2 col-6 footer-links">
-          <h4>Navegue</h4>
-          <ul>
-            <li><a href="#">início</a></li>
-            <li><a href="#">Pulse</a></li>
-           
-          </ul>
-        </div>
-
-        
-
-        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-          <h4>Contato</h4>
-          <p>Rua Nogueiras, Nº 655</p>
-          <p>Centro - Sinop </p>
-          <p>MATO GROSSO - BRASIL</p>
-          <p class="mt-4"><strong>Telefone:</strong> <span>66-99682-3933</span></p>
-          <p><strong>E-mail:</strong> <span>pulseestetica@pulse.com.br</span></p>
-        </div>
-
+      <div class="produto">
+        <img src="img/produto6.jpg" alt="Produto 6" />
+        <p>Pulse Estética Laser.</p>
+        <p>Pulse Estética Laser.</p>
       </div>
     </div>
+  </section>
 
-    <div class="container copyright text-center mt-4">
-      <p>© <span>Direitos Reservados</span> <strong class="sitename">Pulse</strong> </p>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Developed by Maico Rovian
-      </div>
+  <section id="contato" class="contato">
+  <div class="overlay">
+    <h1>Entre em Contato</h1>
+    <p>Solicite seu orçamento ou faça uma visita.</p>
+
+    <div class="info-empresa">
+      <p><strong>AGA Artefatos de Concreto</strong></p>
+      <p>Especializada na fabricação de artefatos de concreto com qualidade, resistência e durabilidade.</p>
+      <p><strong>Missão:</strong> Oferecer soluções em concreto que contribuam para obras seguras e eficientes.</p>
+      <p><strong>Visão:</strong> Ser referência regional em qualidade e inovação no segmento de artefatos de concreto.</p>
+      <p><strong>Valores:</strong> Comprometimento, qualidade, inovação e respeito ao cliente.</p>
+      <p><strong>Endereço:</strong> Av. das Indústrias, 456 – Sinop, MT</p>
     </div>
 
-  </footer>
+    <div class="botoes-contato">
+      <a href="https://wa.me/seunumerowhatsapp" target="_blank" class="botao-whatsapp">WhatsApp</a>
+      <a href="https://goo.gl/maps/localizacao" target="_blank" class="botao-mapa">Como Chegar</a>
+    </div>
+  </div>
+  </section>
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-
+  <script src="script.js"></script>
 </body>
-
 </html>

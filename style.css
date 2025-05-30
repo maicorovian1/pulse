@@ -1,0 +1,246 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+  background-color: #d3d3d3;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #be9a06;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.logo {
+  height: 60px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.menu li a {
+  color: rgb(242, 229, 204);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Slideshow */
+.slideshow {
+  position: relative;
+  width: 100%;
+  height: 40vh;
+  overflow: hidden;
+}
+
+.slides-desktop, .slides-mobile {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 10;
+  padding: 5px 10px;
+  border-radius: 50%;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+/* Seções */
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* Produtos Grid - comportamento padrão (desktop) */
+.produtos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.produto {
+  text-align: center;
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.produto img {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.produto p {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+.produto:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Contato */
+.contato {
+  position: relative;
+  background-image: url('img/contato.png'); /* substitua pelo caminho da sua imagem */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contato .overlay {
+  background-color: rgba(0, 0, 0, 0.8); /* camada escura */
+  padding: 40px;
+  border-radius: 12px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.info-empresa {
+  margin: 30px 0;
+  text-align: left;
+  line-height: 1.6;
+  color: #fff;
+}
+
+.info-empresa p {
+  margin: 8px 0;
+}
+
+.botoes-contato {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.botao-whatsapp,
+.botao-mapa {
+  padding: 12px 24px;
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.botao-whatsapp {
+  background-color: #25d366;
+}
+
+.botao-whatsapp:hover {
+  background-color: #1ebe5d;
+}
+
+.botao-mapa {
+  background-color: #555;
+}
+
+.botao-mapa:hover {
+  background-color: #333;
+}
+
+/* Slideshow responsivo */
+.slides-mobile {
+  display: none;
+}
+
+.slides-desktop {
+  display: block;
+}
+
+/* Tablets - 2 colunas */
+@media (max-width: 992px) {
+  .produtos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile - 1 coluna */
+@media (max-width: 576px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    background-color: #444;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+  }
+
+  .menu.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .slides-desktop {
+    display: none;
+  }
+
+  .slides-mobile {
+    display: block;
+  }
+
+  .produtos-grid {
+    grid-template-columns: 1fr;
+  }
+}
