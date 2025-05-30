@@ -204,6 +204,29 @@ section {
 .slides-desktop {
   display: block;
 }
+/* Fonte manuscrita personalizada para o título */
+.titulo-manu {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.8rem;
+  color: #be9a06;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+}
+
+/* Pequeno ajuste no parágrafo abaixo do título */
+#produtos p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Estilo geral para deixar mais bonito */
+section {
+  background-color: #fff;
+  border-radius: 12px;
+  margin: 20px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
 
 /* Tablets - 2 colunas */
 @media (max-width: 992px) {
