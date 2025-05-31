@@ -23,7 +23,20 @@ body {
   top: 0;
   z-index: 999;
 }
+.horarios {
+  scroll-margin-top: 80px;
+  border: 2px solid #be9a06;
+  background-color: #fff3c4;
+  padding: 40px 20px;
+  text-align: center;
+}
 
+.tabela-horarios p {
+  font-size: 1.2rem;
+  margin: 8px 0;
+  color: #393b01;
+  font-family: 'Arial', sans-serif;
+}
 .logo {
   height: 60px;
 }
