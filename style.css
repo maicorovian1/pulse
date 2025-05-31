@@ -224,6 +224,13 @@ section {
   text-align: center;
   font-size: 90%;
 }
+.contato-manu a,
+.contato-manu a:link,
+.contato-manu a:visited {
+  color: inherit;
+  text-decoration: none;
+  pointer-events: none; /* impede que seja clicável, se você quiser só o visual */
+}
 /* Pequeno ajuste no parágrafo abaixo do título */
 #produtos p {
   font-size: 1.2rem;
@@ -267,6 +274,13 @@ section {
     border: 2px solid #be9a06;
     background-color: #fff3c4; /* destaca mais a seção */
     font-size: 90%;
+  }
+  .contato-manu a,
+  .contato-manu a:link,
+  .contato-manu a:visited {
+    color: inherit;
+    text-decoration: none;
+    pointer-events: none; /* impede que seja clicável, se você quiser só o visual */
   }
   .menu.show {
     display: flex;
