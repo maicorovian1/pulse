@@ -8,7 +8,7 @@
 body {
   font-family: Arial, sans-serif;
   scroll-behavior: smooth;
-  background-color: #d3d3d3;
+  background-color: #f9efe5;
   color: #333;
 }
 
@@ -115,7 +115,7 @@ section {
 .produto img {
   width: 100%;
   height: auto;
-  max-height: 200px;
+  max-height: 450px;
   object-fit: cover;
   border-radius: 4px;
 }
@@ -137,13 +137,13 @@ section {
   background-image: url('img/contato.png'); /* substitua pelo caminho da sua imagem */
   background-size: cover;
   background-position: center;
-  color: white;
+  color: rgb(72, 67, 3);
   padding: 60px 20px;
   text-align: center;
 }
 
 .contato .overlay {
-  background-color: rgba(0, 0, 0, 0.8); /* camada escura */
+  background-color: rgba(208, 195, 9, 0.8); /* camada escura */
   padding: 40px;
   border-radius: 12px;
   max-width: 900px;
