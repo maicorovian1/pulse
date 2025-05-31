@@ -1,0 +1,102 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+
+  <title>- P U L S E -</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <img src="img/logo.png" alt="Logo" class="logo" />
+    <div id="menu-toggle" class="menu-toggle">☰</div>
+    <ul class="menu" id="menu">
+      <li><a href="#">Início</a></li>
+      <li><a href="#produtos">Serviços</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+
+  <div class="slideshow">
+    <div class="slides slides-desktop">
+      <img src="img/foto1.jpg" class="slide active" />
+      <img src="img/foto2.jpg" class="slide" />
+      <img src="img/foto3.jpg" class="slide" />
+      <img src="img/foto4.jpg" class="slide" />
+    </div>
+    <div class="slides slides-mobile">
+      <img src="img/mobile/mobile1.png" class="slide active" />
+      <img src="img/mobile/mobile2.png" class="slide" />
+      
+      
+    </div>
+    <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+    <button class="next" onclick="changeSlide(1)">&#10095;</button>
+  </div>
+
+  <section id="produtos">
+    <h2 class="titulo-manu">Nossos Serviços</h2>
+    <p>Uma equipe especializada</p>
+    <div class="produtos-grid">
+      <div class="produto">
+        <img src="img/produtos/produto1.jpg" alt="Produto 1" />
+        <p>Pulse Estética Laser.</p>
+        <p>Pulse Estética Laser.,</p>
+        <p>Pulse Estética Laser. </p>
+      </div>
+      <div class="produto">
+        <img src="img/produtos/produto2.jpg" alt="Produto 2" />
+        <p>Pulse Estética Laser.</p>
+        <p>Pulse Estética Laser.</p>
+      </div>
+      <div class="produto">
+        <img src="img/produtos/produto3.jpg" alt="Produto 3" />
+        <p>Pulse Estética Laser.</p>
+        <p>Pulse Estética Laser.</p>
+      </div>
+      <div class="produto">
+        <img src="img/produtos/produto4.jpg" alt="Produto 4" />
+        <p>Pulse Estética Laser.</p>
+        <p>Pulse Estética Laser. </p>
+      </div>
+      <div class="produto">
+        <img src="img/produto5.jpeg" alt="Produto 5" />
+        <p>Pulse Estética Laser.</p>
+        <p>Pulse Estética Laser.</p>
+      </div>
+      <div class="produto">
+        <img src="img/produto6.jpg" alt="Produto 6" />
+        <p>Pulse Estética Laser.</p>
+        <p>Pulse Estética Laser.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="contato">
+  <div class="overlay">
+    <h1>Entre em Contato</h1>
+    <p>Solicite seu orçamento ou faça uma visita.</p>
+
+    <div class="info-empresa">
+      <p><strong></strong></p>
+      <p></p>
+      <p><strong>Missão:</strong> </p>
+      <p><strong>Visão:</strong> </p>
+      <p><strong>Valores:</strong></p>
+      <p><strong>Endereço:</strong> </p>
+    </div>
+
+    <div class="botoes-contato">
+      <a href="https://wa.me/+5566996823933" target="_blank" class="botao-whatsapp">WhatsApp</a>
+      <a href="https://goo.gl/maps/localizacao" target="_blank" class="botao-mapa">Como Chegar</a>
+    </div>
+  </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
