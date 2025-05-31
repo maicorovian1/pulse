@@ -183,7 +183,9 @@ section {
 .botao-whatsapp {
   background-color: #25d366;
 }
-
+.botao-whatsapp i {
+  font-size: 24px;
+}
 .botao-whatsapp:hover {
   background-color: #1ebe5d;
 }
@@ -215,7 +217,7 @@ section {
 .contato-manu {
   font-family: 'Dancing Script', cursive;
   font-size: 2.8rem;
-  color: #f798ef;
+  color: #393b01;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   margin-bottom: 10px;
 }
@@ -232,7 +234,17 @@ section {
   margin: 20px;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
 }
+.info-empresa p {
+  margin: 8px 0;
+  font-size: 1.1rem;
+  color: #fff;
+  text-align: center;
+}
 
+.info-empresa strong {
+  color: #393b01;
+  font-weight: bold;
+}
 
 /* Tablets - 2 colunas */
 @media (max-width: 992px) {
