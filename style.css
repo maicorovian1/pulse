@@ -246,15 +246,10 @@ section {
   font-weight: bold;
 }
 
-/* Tablets - 2 colunas */
-@media (max-width: 992px) {
-  .produtos-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
+
 
 /* Mobile - 1 coluna */
-@media (max-width: 576px) {
+@media (max-width: 676px) {
   .menu {
     display: none;
     flex-direction: column;
@@ -264,7 +259,11 @@ section {
     right: 0;
     width: 200px;
   }
-
+  .contato {
+    scroll-margin-top: 80px;
+    border: 2px solid #be9a06;
+    background-color: #fff3c4; /* destaca mais a seção */
+  }
   .menu.show {
     display: flex;
   }
