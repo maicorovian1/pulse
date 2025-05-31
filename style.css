@@ -212,7 +212,13 @@ section {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   margin-bottom: 10px;
 }
-
+.contato-manu {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.8rem;
+  color: #f798ef;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+}
 /* Pequeno ajuste no parágrafo abaixo do título */
 #produtos p {
   font-size: 1.2rem;
