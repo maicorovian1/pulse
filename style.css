@@ -222,6 +222,7 @@ section {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   margin-bottom: 10px;
   text-align: center;
+  font-size: 90%;
 }
 /* Pequeno ajuste no parágrafo abaixo do título */
 #produtos p {
