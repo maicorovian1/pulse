@@ -278,7 +278,24 @@ section {
   color: #393b01;
   font-weight: bold;
 }
+.horarios {
+  scroll-margin-top: 80px;
+  border: 2px solid #ebe0b3;
+  background-color: #ffffff;
+  padding: 40px 20px;
+  text-align: center;
+  margin: 20px; /* Para espaçar das outras seções */
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
 
+.horarios-img {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
 
 
 /* Mobile - 1 coluna */
