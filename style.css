@@ -17,7 +17,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #444446;
+  background-color: #f2ecd7;
  
   position: sticky;
   top: 0;
@@ -25,7 +25,7 @@ body {
 }
 .horarios {
   scroll-margin-top: 80px;
-  border: 2px solid #be9a06;
+  border: 2px solid #ebe0b3;
   background-color: #ffffff;
   padding: 40px 20px;
   text-align: center;
@@ -48,7 +48,7 @@ body {
 }
 
 .menu li a {
-  color: rgb(242, 229, 204);
+  color: rgb(162, 107, 5);
   text-decoration: none;
   font-weight: bold;
 }
@@ -64,18 +64,26 @@ body {
 .slideshow {
   position: relative;
   width: 100%;
-  height: 80vh;
+  height: auto;
   overflow: hidden;
 }
 
-.slides-desktop, .slides-mobile {
+/* Esconde carrossel mobile por padrão */
+.slides-mobile {
+  display: none;
+}
+
+.slides-desktop,
+.slides-mobile {
   position: relative;
   width: 100%;
-  height: 100%;
+  padding-top: 40%; /* 1000x400 = 2.5 proporção (40% altura relativa) */
 }
 
 .slide {
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -102,6 +110,7 @@ body {
 
 .prev { left: 10px; }
 .next { right: 10px; }
+
 
 /* Seções */
 section {
@@ -304,12 +313,13 @@ section {
     display: block;
   }
 
-  .slides-desktop {
+   .slides-desktop {
     display: none;
   }
 
   .slides-mobile {
     display: block;
+    padding-top: 40%; /* mesma proporção para manter 1000x400 */
   }
 
   .produtos-grid {
