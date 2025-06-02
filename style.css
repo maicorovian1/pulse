@@ -296,7 +296,109 @@ section {
   display: block;
   margin: 0 auto;
 }
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
 
+/* HORÁRIOS */
+.horarios-section {
+  background: #f9f9f9;
+  padding: 40px 20px;
+}
+
+.horarios-box {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.horario-item {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 250px;
+}
+
+.horario-item i {
+  font-size: 2rem;
+  color: #9b9410;
+}
+
+/* CONTATO */
+.contato-section {
+  background: #fff;
+  padding: 60px 20px;
+}
+
+.contato-conteudo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.contato-info {
+  max-width: 400px;
+  flex: 1;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  color: #444;
+}
+
+.info-item i {
+  color: #9b9410;
+  font-size: 1.2rem;
+}
+
+.botoes-contato {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.botao-contato {
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.botao-contato.whatsapp {
+  background: #25D366;
+}
+
+.botao-contato.mapa {
+  background: #1e88e5;
+}
+
+.contato-mapa {
+  flex: 1;
+  min-height: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+}
 
 /* Mobile - 1 coluna */
 @media (max-width: 676px) {
