@@ -399,6 +399,25 @@ section {
   width: 100%;
   max-width: 500px;
 }
+.rodape-site {
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 0.8rem;
+  color: #777;
+  margin-top: 40px;
+}
+
+.rodape-site a {
+  color: #555;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.rodape-site a:hover {
+  text-decoration: underline;
+  color: #1e88e5;
+}
 
 /* Mobile - 1 coluna */
 @media (max-width: 676px) {
