@@ -40,3 +40,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
   showSlide(slideIndex);
 });
+const swiper = new Swiper('.swiper-container', {
+    slidesPerView: 2,
+    spaceBetween: 10,
+    breakpoints: {
+      768: {
+        slidesPerView: 5,
+        spaceBetween: 20,
+      }
+    }
+});

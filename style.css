@@ -224,24 +224,18 @@ section {
   color: #a26b05;
   font-weight: bold;
 }
-.whatsapp-fixo {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #25d366;
-  color: white;
-  font-size: 28px;
-  padding: 15px;
+.swiper-slide.testimonial {
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
-  z-index: 999;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  transition: transform 0.2s ease-in-out;
+  background-color: #eee;
+  text-align: center;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.whatsapp-fixo:hover {
-  transform: scale(1.1);
-  background-color: #1ebea5;
-}
 
 /* =================== RESPONSIVO =================== */
 @media (max-width: 768px) {
