@@ -258,6 +258,13 @@ section {
   flex-direction: column;
   justify-content: center;
 }
+.titulo-manu {
+  font-family: 'Dancing Script', cursive;
+  color: #302701; /* Aqui você altera a cor que quiser */
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
 
 
 /* =================== RESPONSIVO =================== */
