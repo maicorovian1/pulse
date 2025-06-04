@@ -166,7 +166,7 @@ section {
 .botao-contato {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #a26b05;
+  background-color: #1705a2;
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -181,9 +181,32 @@ section {
 .contato-mapa {
   flex: 1;
   min-height: 300px;
-  border: 2px solid #ccc;
+  border: 2px solid #059e0a;
   border-radius: 10px;
   overflow: hidden;
+}
+.botao-whatsapp-fixo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #b7f0cc;
+  background-image: url('img/whatsico.png'); /* troque pelo caminho correto */
+  background-repeat: no-repeat;
+  background-position: 12px center;
+  background-size: 24px 24px;
+  color: white;
+  padding: 12px 20px 12px 44px; /* espaço à esquerda para o ícone */
+  border-radius: 50px; /* deixa arredondado */
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease;
+  z-index: 1000;
+}
+
+.botao-whatsapp-fixo:hover {
+  background-color: #1ebe5d;
 }
 
 /* HORÁRIOS */
