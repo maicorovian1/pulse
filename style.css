@@ -276,7 +276,9 @@ section {
   .slides-mobile {
     display: block;
   }
-
+  .titulo-manu {
+    font-size: 1rem; /* reduz o tamanho da fonte no mobile */
+  }
   .menu {
     display: none;
     flex-direction: column;
