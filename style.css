@@ -187,17 +187,18 @@ section {
 }
 .botao-whatsapp-fixo {
   position: fixed;
+  height: 8%;
   bottom: 30px;
   right: 20px;
-  background-color: #b7f0cc;
+  background-color: #d9ede0;
   background-image: url('img/whatsico.png'); /* troque pelo caminho correto */
   background-repeat: no-repeat;
   background-position: 12px center;
-  background-size: 38px 38px;
+  background-size:60px 60px;
   color: white;
   padding: 12px 20px 12px 44px; /* espaço à esquerda para o ícone */
   border-radius: 50px; /* deixa arredondado */
-  font-size:70px;
+  font-size:100px;
   font-weight: bold;
   text-decoration: none;
   box-shadow: 0 4px 6px rgba(0,0,0,0.2);
